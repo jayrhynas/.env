@@ -9,5 +9,6 @@ fi
 echo ". ${HOME}/.env/bashrc" >> ${HOME}/.bashrc
 ln -s ${HOME}/.env/vimrc ${HOME}/.vimrc
 ln -s ${HOME}/.env/vim ${HOME}/.vim
+ln -s ${HOME}/.env/tmux.conf ${HOME}/.tmux.conf
 
-echo "Done"
+echo "Done (\"source .bashrc\" to reload)"
