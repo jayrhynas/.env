@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Change title
+export WINDOW_TITLE=
+export PROMPT_COMMAND='echo -ne "\033]0;$WINDOW_TITLE\007"'
+
+function set_title() {
+    echo -ne "\033]0;$1\007"
+}

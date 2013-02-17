@@ -1,0 +1,164 @@
+devtasks
+
+# Misc
+ • DONE Clean up code style
+ • DONE fix disabled down arrow on “number of bars” after chainging beat size
+ • DONE save offsets
+ • DONE fix scale picker button
+ • DONE double tap delete while playing
+ • DONE copy range
+    ◦ DONE improve 2-finger hold recognition
+    ◦ DONE delete copy on undo
+ • DONE hold anywhere on range to move
+ • DONE setup app.soundbrush2.com
+ • DONE alert text
+ • DONE disable video export on iPad 1
+ • DONE notes controller ← drum names
+ • DONE prevent editing of projects that you don’t own instruments for
+ • DONE fix thick lines in triplet mode
+ • DONE make user settings async
+ • DONE fix negative octave bug
+ • DONE save octaves
+ • DONE update octave info in tools
+ • DONE display octave info in octave view
+ • DONE add explanation text and help button to effects
+ • DONE audio export/email
+ • DONE drum labels
+ • DONE make SoundController handle larger rows
+ • TODO handle “not changed enough” reuploads
+ • DONE let them do one finger move range when using eraser
+ • DONE save before email
+ • DONE high res rendered screenshot
+ • DONE fix display of drum lables on start
+ • DONE fix undo/redo
+ • DONE fix fade-out of overlay
+ • DONE set title of discover view based on page
+ • TODO make watch page grab from correct server
+ • DONE flurry log project create, copy
+ • DONE handle multiple uploads
+ • DONE disable vertical range movement
+ • TODO find out why loading dissapears without fade when loading a sample
+ • TODO find out why location fails
+ • TODO fix scroll jump after move/copy
+ • DONE canvas access no for discover
+ • DONE remove unused instruments
+ • TODO warn about high/low note
+ • TODO loop screen when scrolling is off
+ • DONE shift ocarina down
+ • DONE remove samples
+ • DONE fix bug with selected key when deselecting chromatic scale
+
+# Sound
+ • DONE Profile instrument memory usage (w switching)
+ • DONE Fix sound overload
+    ◦ DONE replace synth pad 4, other instruments
+ • DONE Get SoundController/SoundEngine to handle INSTRUMENT_NONE
+ • DONE octave shifts for some instruments
+ • DONE percussion
+ • DONE tweak percussion layout
+ • DONE drum loops
+ • DONE change BPM based on beat size
+ • DONE fix uninitialized values in SoundEngine (Analyze errors)
+ • DONE fix route change/interruption notifications and stop playing
+ • DONE fix drawing-while-playing cancelling notes
+ • DONE add more scales
+ • V2 TODO hard-limit number of concurrent loops
+ • DONE shaker loop
+ • DONE figure out why scales aren’t saving
+ 
+# Scales
+ • DONE investigate “negative MIDI note” issue
+ • DONE fix accidentals on blues scale (and other scales with accidentals) (i.e. handle double sharps/double flats)
+ • DONE fix chromatic scale spacing
+ • DONE fix display notes for flat keys
+ • DONE fix note spacing (change spacing depending on accidentals)
+ • DONE grey out buttons for chromatic instead of hide
+ • DONE fix scale scroll position
+ 
+# Scrolling
+ • DONE allow draw when scrolling is slow
+ • DONE add immediate and animated scroll position changers
+ • DONE change scroll range when mixer opens and closes
+ • DONE change horizontal/vertical thresholds
+ • DONE fix scroll max change when switching windows (ex. tools→mixer)
+ • DONE stop scrolling when loading
+ • DONE reset on new
+
+# Saving
+ • DONE Implement saving
+    ◦ DONE save tools settings
+    ◦ DONE connect beat size to save
+ • DONE save to private folder
+ • DONE Clean up FileHelper
+ • DONE if crash on load, mark file as corrupt and don’t load
+ • DONE Make operations less dependent on current project
+ • DONE find out why timeline doesnt update when loading project with different beat size
+ • DONE single tap current project to edit
+ • DONE scroll projects panel to show selected project on open
+ • DONE fix deleting last project freezing on creation
+ • DONE reset triplet mode on load
+ • DONE saving UI
+    ◦ DONE fix fade during dragStart
+    ◦ DONE update model once drag finishes
+    ◦ DONE load and save ordering
+    ◦ DONE center spinning wheel
+    ◦ DONE move loading text down
+    ◦ DONE add creating screen
+    ◦ DONE reimplement screenshots
+    ◦ DONE fix drag animation
+    ◦ DONE touching canvas during title edit causes crash
+    ◦ DONE deleting project sometimes flies to top right
+    ◦ DONE rename sometimes fails
+    ◦ DONE fix multiple delete gestures
+    ◦ DONE activity indicator fade out
+    ◦ DONE persistent screenshot cache (but clear on memory warning)
+    ◦ DONE mutliline labels
+    ◦ DONE speed up auto-scroll
+    ◦ DONE scroll to new/copied projects
+    ◦ DONE add projects/samples pannels
+    ◦ DONE change drag indicator
+    ◦ DONE switch to high layer on load
+    ◦ DONE find out why screenshot is sometimes wrong
+ • DONE reload cached screenshot after saving on first launch
+ • DONE select first track on load
+
+# Output Levels
+ • DONE Output levels
+
+# Playhead
+ • DONE make playhead move during playback
+ • DONE make scroll move with playhead
+ • DONE make sure scroll moves so playhead is on screen while playing
+ • DONE snap playhead to grid on drag, pause
+ • DONE fix drawing of last number
+ • DONE move playehead on FF/RW
+ • DONE change play button image depending on state (play/pause)
+ • DONE implement scrolling for repeat mode
+ • DONE fix play button image on stop-at-end
+ • DONE fix snap on double tap issue
+ • DONE fix play continues if reach end while drawing
+ • DONE implement draw-while-playing
+ • DONE implement double-tap-to-delete toggle
+ • DONE make playhead tap zone bigger for 2nd finger
+ • DONE stop autoscroll on 2 finger range create
+ • DONE don’t stop at end if looping
+ • DONE disable move line while playing
+ • DONE fix issue where scroll sometimes jumps after drawing a line while playing
+ 
+# Grid
+ • DONE implement triplet grids
+    ◦ DONE make sure playhead correctly snaps to current grid
+ • V2 TODO implement off-beat triplets
+ • DONE implement time signature changing (grid + timeline)
+
+# Mixer
+ • DONE Connect mixer UI to SoundEngine 
+ • DONE fix draw under mixer
+
+# Effects
+ • DONE rework effects framework
+ • DONE implement basic effects
+ • DONE save effect settings
+ • DONE update image in effects panel
+ • DONE convert ‘-’ to ‘ ‘ in titles
+ • DONE vertical effects

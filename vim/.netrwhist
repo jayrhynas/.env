@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/jayson/Developer/SoundBrush/com.leafnotesinc.SoundBrush 2012-06-02 18.06.27.632.xcappdata'
+let g:netrw_dirhist_2='/Users/jayson/Developer/SoundBrush2/SoundBrush 2.xcodeproj'
+let g:netrw_dirhist_3='/Users/jayson/Documents/School/CS 343/A1'
+let g:netrw_dirhist_4='/Volumes/linux.student.cs.uwaterloo.ca'
+let g:netrw_dirhist_5='/Users/jayson/.env'

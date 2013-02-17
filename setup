@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+if [[ "${DIR}" != "${HOME}/.env" ]]; then
+    echo "Expected to be in ${HOME}/.env, actually in ${DIR}"
+    exit -1
+fi
+
+echo ". ${HOME}/.env/bashrc" >> ${HOME}/.bashrc
+ln -s ${HOME}/.env/vimrc ${HOME}/.vimrc
+ln -s ${HOME}/.env/vim ${HOME}/.vim
+
+echo "Done"

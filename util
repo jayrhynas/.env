@@ -1,0 +1,146 @@
+#!/bin/bash
+
+# note: starts vim with the Note plugin by Peter Odding
+function note() {
+    if [[ $(uname) == "Darwin" ]]; then
+        cmd='mvim'
+    else
+        cmd='vim'
+    fi
+    ${cmd} -c ":e note:$1"
+}
+
+# md: create and navigate to a new directory
+function md() {
+    mkdir -p "$1" && cd "$1"
+}
+
+# extract: uncompress/extracts various filetypes to the current directory
+function extract() {
+    if [ -f $1 ]; then
+        case $1 in
+            *.tar.bz2)  tar xvjf $1     ;;
+            *.tar.gz)   tar xvzf $1     ;;
+            *.bz2)      bunzip2 $1      ;;
+            *.rar)      unrar $1        ;;
+            *.gz)       gunzip $1       ;;
+            *.tar)      tar xvf $1      ;;
+            *.tbz2)     tar xvjf $1     ;;
+            *.tbz)      tar xvjf $1     ;;
+            *.tgz)      tar xvzf $1     ;;
+            *.zip)      unzip $1        ;;
+            *.Z)        uncompress $1   ;;
+            *)          echo "'$1' cannot be extracted with 'extract'" ;;
+        esac
+    else
+        echo "extract: no such file '$1'"
+    fi
+}
+
+# unique: takes stdin and outputs the first occurance of each line
+# like uniq, but input data doesn't need to be sorted
+function unique() {
+    awk '!x[$0]++'
+}
+
+# status [code]
+#
+# Returns status code
+# if no code specified, returns 0
+function status() {
+    if (( $# )); then
+        return $1
+    fi
+    return 0
+}
+
+# serve: serve up the current directory on the given port (default 8080)
+function serve() {
+    python -m SimpleHTTPServer ${1:-8080}
+}
+
+# td: creates a temporary directory
+TD="$HOME/.temp/`date +'%Y-%m-%d'`"
+td() {
+  td=$TD
+  if [ -n "$1" ]; then
+    if [ $1 = '-c' ]; then
+      echo "Are you sure you want to delete all temp folders and their contents? (Y/N)"
+      read ans
+      case $ans in
+           Y|y) td="$HOME/.temp"; rm -r $td ;;
+           N|n) ;;
+             *) echo "Invalid command"
+      esac
+    else 
+      td="$HOME/.temp/`date -v"$1d" +'%Y-%m-%d'`";
+    fi  
+  fi
+  mkdir -p $td; cd $td
+  unset td
+}
+
+# Mac-specific
+if [[ $(uname) == "Darwin" ]]; then
+    # cdf: change the directory to the frontmost Finder window
+    cdf () {
+      finderRunning=`ps -ax | grep /Finder.app/ | grep -v grep`
+      if [[ -z $finderRunning ]]; then
+        pathFinderRunning=`ps -ax | grep /Path\ Finder.app/ | grep -v grep`
+        if [[ -z $pathFinderRunning ]]; then
+          curFolderPath=""
+        else
+          curFolderPath=`osascript <<HERE
+            tell application "Path Finder"
+              try
+                POSIX path of (target of first finder window)
+              end try
+            end tell
+HERE`
+        fi
+      else
+        curFolderPath=`osascript <<HERE
+          tell application "Finder"
+            try
+              set curFolder to (folder of the front window as alias)
+              POSIX path of curFolder
+            end try
+          end tell
+HERE`
+      fi
+      if [[ -z $curFolderPath ]]; then
+        echo "cd ~/Desktop"
+        cd ~/Desktop
+      else
+        echo "cd $curFolderPath"
+        cd "$curFolderPath"
+      fi
+    }
+
+    # pman: open the given manpage in preview
+    function pman() {
+        man -t "$@" | ps2pdf - - | open -f -a Preview
+    }
+
+    # tman: open the given manpage in textmate
+    function tman () {
+          MANWIDTH=160 MANPAGER='col -bx' man "$@" | mate
+    }
+
+    # quit: cleanly quit the given applications
+    function quit() {
+        for app in "$@"; do
+            osascript -e 'quit app "'$app'"'
+        done
+    }
+
+    # relaunch: reopen the specified apps
+    function relaunch() {
+        for app in "$@"; do
+            osascript -e 'quit ap "'$app'"'
+            sleep 2
+            open -a $app
+        done
+    }
+fi
+

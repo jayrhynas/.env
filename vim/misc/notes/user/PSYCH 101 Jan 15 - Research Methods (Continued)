@@ -1,0 +1,76 @@
+PSYCH 101 Jan 15 - Research Methods (Continued)
+
+# Bias
+
+ • Hawthorne Effect: people behave differently when they know they're being watched/studied
+    ◦ ex: trying to find what changes increased productivity; no matter what changed, researchers noticed increased productivity
+ • Demand characteristics: inadvertant cues a researcher may give that tips off the subject to the purpose of the experiment
+    ◦ ramp experiment: 2 groups of people, both groups given heavy backpacks
+       ▸ first group was asked to estimate how steep the ramp was, not told why they had backpacks
+          ▹ they estimated the steepness higher, since they assumed the backpack was supposed to make the ramp seem steeper and so to be "good subjects" they said it was steeper
+       ▸ second group was asked to estimate how steep the ramp was, and was given an explanation that they were going to measure the subject's physiological response while climbing the ramp with the backpack
+          ▹ given this alternate explanation, the subjects estimated the ramp as less steep than the first group
+ • ways to reduce bias:
+    ◦ inform participants
+    ◦ single blind study: participant doesn't know purpose of experiment
+    ◦ double blind study: neither experimenter nor subject know
+       ▸ ex: experimenter doesn't know if particpant has been given a reason for the backpack
+ • bad practices
+    ◦ anecdotal evidence: an individual experience/story presented as evidence
+       ▸ ex: weight loss program results ("I lost 150lbs!") often has fine print "results not typical"
+    ◦ appeals to authority: believing an expert just because they're an expert, not because they have evidence
+       ▸ even worse: biased expert (i.e. doctor being paid by drug company)
+    ◦ appeals to common sense 
+       ▸ ex: "the earth is the center of the universe" the sun and the stars rotate around the earth, of course it's the center
+    ◦ appeals to tradition/appeals to novelty
+    ◦ common theme of these bad practices: none of them are backed up by evidence 
+
+# Research Methods
+
+ • why do we research?
+    ◦ exploratory research: to explore a phenomenon
+    ◦ theory testing: to test theories about cause & effect relationships
+ • what is a *theory*?
+    ◦ "a proposed systematic set of principles that explain and predict observed events"
+ • empirical research
+    ◦ theory testing
+    ◦ a theory must be able to possibly be proved false to be a “theory”
+    ◦ generate *hypotheses* about the results of a particular study
+       ▸ two hypotheses: research hypothesis (hyp. about what you’re trying to prove) and null hypothesis (hyp. about the neutral/opposite case)
+ • what is *not* emperical research?
+    ◦ Theory: vitamin C helps you recover from cold more quickly
+    ◦ Evidence: anecdotal (“I took vitamin C and got better”), appeals to tradition (“People always take vitamin C when they get sick”)
+    ◦ Problem: confirmatory bias we notice/remember the evidence that supports our theory
+    ◦ Reality: despite many studies, no evidence that vitmain C helps with colds
+       ▸ although, doesn’t hurt, could help due to palcebo effect
+ • scientific method
+    ◦ Define the problem
+    ◦ Observe the phenomenon
+    ◦ Form a hypothesis
+    ◦ Test the hypothesis
+    ◦ Analyze results - look for chance/statistical anomalies
+    ◦ Draw conclusions - based on evidence
+    ◦ Share results - peer review journals
+ • correlational research
+    ◦ primary goal: establish whether one variable is predicted by one or more other variables
+    ◦ usually we have a fixed/unalterable variable and we want to see how it affects another variable (i.e. gender vs IQ)
+    ◦ need to worry about confounding variables: external/other variables that may affect results (i.e. anxiety during IQ test)
+    ◦ remember: *CORRELATION -/→ CAUSALITY*
+       ▸ crime increases when the moon is full
+       ▸ opposites attract
+          ▹ you notice/pay more attention to relationships between opposite people
+       ▸ gamblers on a “hot streak”
+       ▸ sterotypes
+ • experimental research
+    ◦ primary goal: to establish whether one variable is caused by one or more other variables
+    ◦ independent variable
+       ▸ determined by experimenter
+       ▸ random assignment to different levels
+       ▸ researcher tries to keep other variables constant while they change the independent variable
+    ◦ dependent variable
+       ▸ variable of interest
+       ▸ we assume it will change when we change the independent variable
+
+# Ethics
+ • institutional review board
+    ◦ committee of researchers and officials charged with protecting research participants

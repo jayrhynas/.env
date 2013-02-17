@@ -1,0 +1,57 @@
+
+UX
+
+# Intro to UX
+ - Usability
+ - Accessibility
+ - Intuitiveness
+ - Feelings
+ - Experience
+
+# Market vs User Research
+ - Market
+    - Who? How much? Why?
+    - Focuses on groups of users, goal is to determine if service is viable in marketplace
+ - User
+    - What? How? When?
+    - About individual experience, goal is to identify problems and solutions the user will experience
+    - Important to know what works and what doesn’t
+
+# UX Tests
+ - Debrief: talk to user after test, ask about their overall experience, 3 best/worst moments etc
+ - Usability study
+    - Most accurate and in-depth study of user’s experience
+    - One user at a time, non-specific tests
+    - Collect & analyze data, debrief
+ - Diary study
+    - Collect data over long periods of use
+    - Users record video diaries talking about their feelings about the experience
+    - 1-3 times/week
+    - Encourage discussion of specific tasks
+    - Collect & analyze data, debrief
+ - A/B testing
+    - Compares two implementations of a new feature
+    - One user at a time, specific tasks, collect & analyze data, debrief
+ - Field study
+    - Studies in home or workplace
+    - Intend to simulate natural experience
+
+# UX Testing Tips
+ - Small samples (5 or less), but often
+ - Focus on fixing majority complaints first, individual problems later
+ - Let user take the wheel
+ - Good feedback is as important as bad feedback
+ - Less is more _usable_
+
+# Stakeholder involvement
+ - Stakeholders: anyone directly affected by success of product/project
+ - Important for stakeholders to pay attention to user & market research
+ - Know what your stakeholders want, encourage participation and observation of studies
+ - Create interesting ways to showcase results
+
+# Impact & Lean Design
+ - Success of research is judged by impact on design
+ - Doesn’t limit creativity, only parameters
+ - Successful research leads to *lean design*
+ - Lean UX
+    - combines principles of lean startup with design

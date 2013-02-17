@@ -1,0 +1,13 @@
+# Mac-specific
+if [[ $(uname) == "Darwin" ]]; then
+    alias gvim="mvim"
+    alias fcd='open .'
+fi
+
+# vim traps
+alias :q='echo You\'\''re not in vim anymore'
+alias :w=':q'
+alias :e='vim'
+
+alias scpr='rsync --partial --progress --rsh=ssh'
+alias hist='history | grep $1'
