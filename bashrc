@@ -50,10 +50,10 @@ function git_ps1() {
     else
         color=${GIT_DIRTY}
     fi
-    echo " (${color}${branch}\[$RESET_ALL\])"
+    printf "%$((COLUMNS + 19))s\r" "(${color}${branch}\[$RESET_ALL\])"
 }
 
-export PROMPT_COMMAND='PS1="${HOST_COLOR}\u@\h ${DATE_COLOR}\D{%a %b %d %Y %T}\n${DELIM_COLOR}[${INFO_COLOR}\w${DELIM_COLOR}]\[${RESET_ALL}\]$(git_ps1) "'
+export PROMPT_COMMAND='PS1="$(git_ps1)${HOST_COLOR}\u@\h ${DATE_COLOR}\D{%d/%m/%y %T} ${DELIM_COLOR}[${INFO_COLOR}\w${DELIM_COLOR}]\[${RESET_ALL}\]\n$ "'
 
 # Forces propmt to start on a new line, even if the previous command
 # did not terminate its output with a newline
