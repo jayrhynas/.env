@@ -50,7 +50,7 @@ function git_ps1() {
     else
         color=${GIT_DIRTY}
     fi
-    printf "%$((COLUMNS + 19))s\r" "(${color}${branch}\[$RESET_ALL\])"
+    printf "%$((COLUMNS + 19))s\r" "${color}(${branch})\[$RESET_ALL\]"
 }
 
 export PROMPT_COMMAND='PS1="$(git_ps1)${HOST_COLOR}\u@\h ${DATE_COLOR}\D{%d/%m/%y %T} ${DELIM_COLOR}[${INFO_COLOR}\w${DELIM_COLOR}]\[${RESET_ALL}\]\n$ "'
