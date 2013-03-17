@@ -142,5 +142,20 @@ HERE`
             open -a $app
         done
     }
+
+    # term: open a new iTerm window at the current directory
+    function term() {
+        osascript <<END
+            tell application "iTerm"
+                set newterm to (make new terminal)
+                tell newterm
+                    launch session "Default Session"
+                    tell the last session
+                        write text "cd \"$PWD\""
+                    end tell
+                end tell
+            end tell
+END
+    }
 fi
 
